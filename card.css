@@ -1,0 +1,50 @@
+body{
+    background-color: rgba(0, 0, 0, 0.915);
+}
+img {
+height: 95vh;
+object-fit: cover;
+}
+.wrap{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    border-radius: 15px;
+    z-index: 2;
+    position: absolute;
+    background-color: rgba(26, 11, 40, 0.173);
+    height: 360px;
+    width: 700px;
+    margin: 5vw;
+    transform: rotate(10deg);
+}
+.top{
+    animation: moving 2s ease-in-out  infinite ;
+}
+.text{
+    color: white ;
+    padding: 10vw;
+    text-align: center;
+    font-size: larger;
+}
+.text span{
+    color: rgb(65, 240, 34);
+    font-size: 30px;
+    text-align: left;
+}
+
+@keyframes moving{
+      50%{
+        transform: rotate(5deg);
+      }
+      100%{
+        transform: rotate(10deg);
+      }
+}
+
+@media only screen and (orientation:portrait) {
+ .card{
+    width: 90vw;
+ }   
+}
